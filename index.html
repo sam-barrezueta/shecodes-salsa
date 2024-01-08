@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsa Dancing 💃🏽</title>
+    <style>
+        body{
+            background:linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+        h1{
+            text-align: center;
+        }
+
+        h2 {text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            border: none;
+            background: rgb(153, 128, 255);
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            color: black;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 18px;
+        }
+            
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgb(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .salsa-intro-picture {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .salsa-intro-picture:hover {
+            filter: contrast(80%);
+            transform: scale(1.1);
+        }
+
+        .grid {
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .grid img:hover {
+            transform: scale(1.5);
+        }
+
+        .dark {
+            background: rgb(38, 38, 38);
+        }
+
+        .dark .container {
+            background: rgb(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .dark button {
+            background: rgb(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .dark button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            color: black;            
+        }
+
+    </style>
+
+</head>
+<body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+        <h1>Salsa Dancing</h1>
+        <h2>My favourite hobby</h2>
+        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/635/original/ardian-lumi-6Woj_wozqmA-unsplash.jpg?1704653967"
+            alt=""
+            class="salsa-intro-picture">
+        </a>
+        <div class="grid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/634/original/omar-lopez-0JufVigFHj8-unsplash.jpg?1704653961" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/633/original/clarisse-meyer-fycGoHbA_s0-unsplash.jpg?1704653952" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/631/original/mitchell-orr---LyFIjXoFY-unsplash.jpg?1704653947" alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/643/original/serhii-kindrat-NfNSeJ8ghL0-unsplash.jpg?1704657934" alt="">
+        </div>   
+        
+        <p>Salsa dancing has been an integral part of my life, seamlessly woven into the vibrant tapestry of my South American
+        heritage. Growing up amidst the rhythmic beats and lively melodies, I found solace and joy on the dance floor. The art
+        of salsa transcends mere movement; it is a celebration of culture, family, and the pulsating heartbeat of Latin music.
+        As I twirl and sway to the infectious rhythms, I am transported to the memories of family gatherings where the dance
+        floor was our shared canvas. The sultry and passionate moves of salsa reflect the fiery spirit of my roots, and each
+        step becomes a testament to the rich tradition that courses through my veins. Salsa isn't just a hobby; it's a cherished
+        connection to my ancestry, a dance that tells the story of generations before me and invites me to join in the
+        celebration of life, love, and the irresistible allure of Latin dance.
+</p>
+        <button>Book your salsa lesson</button>
+        <footer>Coded by <a href="https://github.com/sam-barrezueta/shecodes-salsa" target="_blank">Sam Barrezueta</a></footer>
+    </div>
+
+
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body")
+
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark")
+            } else {
+                body.classList.add("dark")
+            }
+        }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener('click', changeTheme)
+
+        let 
+
+    </script>
+</body>
+</html>
